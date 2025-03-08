@@ -5,7 +5,7 @@
                 <div class="sidebar-brand-icon rotate-n-15">
                  
                 </div>
-                <img src="assets/img/Siix.jpg" alt="Logo" width="170" height="60" class="mr-2">
+                <img src="assets/img/Siix.jpg" alt="Logo" width="160" height="60" class="mr-2">
                 
             </a>
 
@@ -15,66 +15,68 @@
             <!-- Nav Item - Dashboard -->
             <li class="nav-item active">
                 <a class="nav-link" href="index.html">
-                    <i class="fas fa-fw fa-tachometer-alt"></i>
-                    <span>Dashboard</span></a>
+                    <i class="fas fa-fw fa-columns"></i>
+                    <span style="font-size: 20px;">Dashboard</span></a>
             </li>
 
             <!-- Divider -->
             <hr class="sidebar-divider">
 
-            <!-- Heading -->
-            <div class="sidebar-heading">
-                DATA
-            </div>
+<!-- Nav Item - Data (Dropdown) -->
+<li class="nav-item">
+    <a class="nav-link" href="charts.html">
+        <i class="fas fa-fw fa-industry"></i>
+        <span>DATA EQUIPMENT</span>
+    </a>
+    <!-- Collapse Menu for Data -->
+    <div id="dataDropdown" class="collapse" aria-labelledby="dataDropdown" data-parent="#accordionSidebar">
+        <ul class="nav flex-column ml-3">
+            <!-- Data Machine -->
+            <li class="nav-item">
+                <a class="nav-link" href="data-mesin.html">
+                    <i class="fas fa-fw fa-cogs"></i>
+                    <span>Data Machine</span>
+                </a>
+            </li>
+            <!-- Data Pallet -->
+            <li class="nav-item">
+                <a class="nav-link" href="data-pallet.html">
+                    <i class="fas fa-fw fa-pallet"></i>
+                    <span>Data Pallet</span>
+                </a>
+            </li>
+            <!-- Data Jig -->
+            <li class="nav-item">
+                <a class="nav-link" href="data-jig.html">
+                    <i class="fas fa-fw fa-object-group"></i>
+                    <span>Data Jig</span>
+                </a>
+            </li>
+            <!-- Data Fume Extractor -->
+            <li class="nav-item">
+                <a class="nav-link" href="data-fume-extractor.html">
+                    <i class="fas fa-fw fa-filter"></i>
+                    <span>Data Fume Extractor</span>
+                </a>
+            </li>
+            <!-- Data Selective -->
+            <li class="nav-item">
+                <a class="nav-link" href="data-selective.html">
+                    <i class="fas fa-fw fa-tools"></i>
+                    <span>Data Selective</span>
+                </a>
+            </li>
+            <!-- Data Trolley -->
+            <li class="nav-item">
+                <a class="nav-link" href="data-trolley.html">
+                    <i class="fas fa-fw fa-cart-arrow-down"></i>
+                    <span>Data Trolley</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+</li>
 
-            <!-- Nav Item - Pages Collapse Menu -->
-            <li class="nav-item">
-                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
-                    aria-expanded="true" aria-controls="collapseTwo">
-                    <i class="fas fa-fw fa-cog"></i>
-                    <span>DATA MACHINE</span>
-                </a>
-                
-            </li>
-            <li class="nav-item">
-                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
-                    aria-expanded="true" aria-controls="collapseTwo">
-                    <i class="fas fa-fw fa-cog"></i>
-                    <span>DATA PALLET</span>
-                </a>
-                
-            </li>
-            <li class="nav-item">
-                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
-                    aria-expanded="true" aria-controls="collapseTwo">
-                    <i class="fas fa-fw fa-cog"></i>
-                    <span>DATA JIG</span>
-                </a>
-
-            </li>
-            <li class="nav-item">
-                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
-                    aria-expanded="true" aria-controls="collapseTwo">
-                    <i class="fas fa-fw fa-cog"></i>
-                    <span>DATA FUME EXTRACTOR</span>
-                </a>
-                
-                </li>
-            <li class="nav-item">
-                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
-                    aria-expanded="true" aria-controls="collapseTwo">
-                    <i class="fas fa-fw fa-cog"></i>
-                    <span>DATA SELECTIVE</span>
-                </a>
-
-            </li>
-            <!-- Nav Item - Utilities Collapse Menu -->
-            <li class="nav-item">
-                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities"
-                    aria-expanded="true" aria-controls="collapseUtilities">
-                    <i class="fas fa-fw fa-wrench"></i>
-                    <span>DATA TROLLEY</span>
-                </a>
                 <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities"
                     data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
@@ -85,21 +87,12 @@
                         <a class="collapse-item" href="utilities-other.html">Other</a>
                     </div>
                 </div>
-            </li>
-
-            <!-- Divider -->
-            <hr class="sidebar-divider">
-
-            <!-- Heading -->
-            <div class="sidebar-heading">
-                Addons
-            </div>
+            </li>   
 
             <!-- Nav Item - Pages Collapse Menu -->
             <li class="nav-item">
-                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages"
-                    aria-expanded="true" aria-controls="collapsePages">
-                    <i class="fas fa-fw fa-folder"></i>
+                <a class="nav-link" href="charts.html">
+                    <i class="fas fa-fw fa-calendar-alt"></i>
                     <span>SCHEDULE PM</span>
                 </a>
                 <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
@@ -119,15 +112,29 @@
             <!-- Nav Item - Charts -->
             <li class="nav-item">
                 <a class="nav-link" href="charts.html">
-                    <i class="fas fa-fw fa-chart-area"></i>
-                    <span>Charts</span></a>
+                    <i class="fas fa-fw fa-file-alt"></i>
+                    <span>REPORT</span></a>
+            </li>
+
+             <!-- Nav Item - Charts -->
+             <li class="nav-item">
+                <a class="nav-link" href="charts.html">
+                    <i class="fas fa-fw fa-user-shield"></i>
+                    <span>USER MANAGEMENT</span></a>
             </li>
 
             <!-- Nav Item - Tables -->
             <li class="nav-item">
                 <a class="nav-link" href="tables.html">
-                    <i class="fas fa-fw fa-table"></i>
-                    <span>Tables</span></a>
+                    <i class="fas fa-fw fa-cog"></i>
+                    <span>SETTING</span></a>
+            </li>
+
+              <!-- Nav Item - Tables -->
+              <li class="nav-item">
+                <a class="nav-link" href="tables.html">
+                    <i class="fas fa-fw fa-sign-out-alt"></i>
+                    <span>Log Out</span></a>
             </li>
 
             <!-- Divider -->
