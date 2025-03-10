@@ -24,6 +24,8 @@
 
 <body class="bg-gradient-primary">
 
+
+
     <div class="container">
 
         <!-- Outer Row -->
@@ -35,8 +37,12 @@
                     <div class="card-body p-0">
                         <!-- Nested Row within Card Body -->
                         <div class="row">
-                            <div class="col-lg-6 d-flex align-items-center justify-content-center">
-                                <img src="assets/img/Logo.png" alt="Company Logo" class="img-fluid" style="max-width: 100%;">
+                            
+                            <div class="col-lg-6 d-flex align-items-center justify-content-center">>
+                            <img id="image" src="assets/img/3.png" alt="Company Logo" class="img-fluid" style="max-width: 90%; position: relative; top: -40px;">
+                            <body style="background: url('assets/img/PT.jpg') no-repeat center center fixed; background-size: cover;">
+
+                               
                             </div>
                             
                             <div class="col-lg-6">
@@ -44,14 +50,14 @@
                                     <div class="text-center">
                                         <h1 class="h4 text-gray-900 mb-4">Hello Engineer!</h1>
                                     </div>
-                                    <form class="user">
+                                    <form class="user" method="post" action="<?=base_url('auth'); ?>">
                                         <div class="form-group">
-                                            <input type="email" class="form-control form-control-user"
+                                            <input type="email" name="email" class="form-control form-control-user"
                                                 id="exampleInputEmail" aria-describedby="emailHelp"
                                                 placeholder="Email">
                                         </div>
                                         <div class="form-group">
-                                            <input type="password" class="form-control form-control-user"
+                                            <input type="password" name="password" class="form-control form-control-user"
                                                 id="exampleInputPassword" placeholder="Password">
                                         </div>
                                         <div class="form-group">
@@ -61,9 +67,9 @@
                                                     Me</label>
                                             </div>
                                         </div>
-                                        <a href="index.php" class="btn btn-primary btn-user btn-block">
-                                            Login
-                                        </a>
+                                       <button type="submit" class="btn btn-primary btn-user btn-block">login
+                                        <a href="<?=base_url("dashboard"); ?>"></a>
+                                       </button>
                                         <hr>
                                        
                                         </a>
