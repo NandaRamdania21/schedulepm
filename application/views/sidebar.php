@@ -5,7 +5,7 @@
                 <div class="sidebar-brand-icon rotate-n-15">
                  
                 </div>
-                <img src="assets/img/Siix.jpg" alt="Logo" width="160" height="60" class="mr-2">
+                <img src="assets/img/Siix.jpg" alt="Logo" width="180" height="60" class="mr-2">
                 
             </a>
 
@@ -121,20 +121,6 @@
                 <a class="nav-link" href="charts.html">
                     <i class="fas fa-fw fa-user-shield"></i>
                     <span>USER MANAGEMENT</span></a>
-            </li>
-
-            <!-- Nav Item - Tables -->
-            <li class="nav-item">
-                <a class="nav-link" href="tables.html">
-                    <i class="fas fa-fw fa-cog"></i>
-                    <span>SETTING</span></a>
-            </li>
-
-              <!-- Nav Item - Tables -->
-              <li class="nav-item">
-                <a class="nav-link" href="<?=base_url("auth"); ?>">
-                    <i class="fas fa-fw fa-sign-out-alt"></i>
-                    <span>Log Out</span></a>
             </li>
 
             <!-- Divider -->
