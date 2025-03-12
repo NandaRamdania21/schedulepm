@@ -15,3 +15,7 @@
 <!-- Custom styles for this template-->
 <link href="assets/css/sb-admin-2.min.css" rel="stylesheet">
 
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fullcalendar@5.11.3/main.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.11.3/main.min.js"></script>
+

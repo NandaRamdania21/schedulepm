@@ -66,7 +66,7 @@ body {
   line-height: 1.5;
   color: #858796;
   text-align: left;
-  background-color: #ffffff;
+  background-color: #fff;
 }
 
 [tabindex="-1"]:focus:not(:focus-visible) {
@@ -159,13 +159,13 @@ sup {
 }
 
 a {
-  color: #203c89;
+  color: #4e73df;
   text-decoration: none;
   background-color: transparent;
 }
 
 a:hover {
-  color: #546bae;
+  color: #224abe;
   text-decoration: underline;
 }
 

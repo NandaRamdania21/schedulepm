@@ -8,52 +8,52 @@ class Auth extends CI_Controller
     {
         parent::__construct();
         $this->load->library('form_validation');
-        $this->load->model('Model_auth');
+        $this->load->model('M_auth');
     }
 
     public function index()
-    {
-        $this->form_validation->set_rules('email', 'Email', 'required|trim|valid_email');
-        $this->form_validation->set_rules('password', 'Password', 'required|trim');
+{
+    $this->form_validation->set_rules('email','Email','required|trim|valid_email');
+    $this->form_validation->set_rules('password','Password','required|trim');
 
-        if ($this->form_validation->run('login') == false) {
-            $this->load->view('login');
+    if ($this->form_validation->run('login') == false) {
+        $this->load->view('login');
+    } else {
+        //code
+        $email = $this->input->post('email');
+        $password = $this->input->post('password');
 
-        } else {
-            $email = $this->input->post('email');
-            $password = $this->input->post('password');
-
-            $user = $this->Model_auth->get_user_data($email);
-
-            if ($user) {
-                if (password_verify($password, $user['password'])) {
-                    $data = [
-                        'email' => $user['email'],
-                        'role_id' => $user['role_id'],
-                        'id' => $user['id']
-                    ];
-                    $this->session->set_userdata($data);
-
-                    if ($user['role_id'] == 1) {
-                        echo "halaman admin ";
-                    } else {
-                        echo "halaman Mahasiswa ";
-                    }
-
-                    $this->session->set_userdata($data);
-                    echo 'berhasil login';
+        $user = $this->M_auth->get_user_data($email);
+        if ($user) {
+            if (password_verify($password, $user['password'])) {
+                $data = [
+                'email' => $user['email'],
+                'role_id' => $user['role_id'],
+                'id' => $user['id']
+                ];
+                $this->session->set_userdata($data);
+                
+                if ($user['role_id'] == 1) {
+                    echo "halaman admin ";
                 } else {
-                    $this->session->set_flashdata('message', '<div class="alert alert-danger" role="alert">Wrong password!</div>');
-
-                    redirect('dashboard');
+                    // echo "halaman Mahasiswa ";
+                    $this->load->view('dashboard');
+                    
                 }
+                
+                $this->session->set_userdata($data);
+                // echo 'berhasil login';
             } else {
-                $this->session->set_flashdata('message', '<div class="alert alert-danger"
-    role="alert">Email is not registered!</div>');
+                $this->session->set_flashdata('message', '<div class="alert alert-danger" role="alert">Wrong password!</div>');
                 redirect('auth');
             }
+        } else {
+            $this->session->set_flashdata('message', '<div class="alert alert-danger"
+            role="alert">Email is not registered!</div>');
+            redirect('auth');
         }
     }
+}
     public function dashboard()
     {
         $this->load->view('index');
