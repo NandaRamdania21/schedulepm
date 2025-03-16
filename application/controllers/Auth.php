@@ -37,7 +37,9 @@ class Auth extends CI_Controller
                     echo "halaman admin ";
                 } else {
                     // echo "halaman Mahasiswa ";
-                    $this->load->view('dashboard');
+                    // $this->load->view('dashboard');
+                    redirect('auth/dashboard');
+
                     
                 }
                 
@@ -56,6 +58,7 @@ class Auth extends CI_Controller
 }
     public function dashboard()
     {
-        $this->load->view('index');
+        
+        $this->load->view('template', ['content' => 'dashboard']); 
     }
 }

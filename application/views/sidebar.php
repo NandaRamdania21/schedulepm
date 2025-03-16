@@ -5,7 +5,7 @@
                 <div class="sidebar-brand-icon rotate-n-15">
                  
                 </div>
-                <img src="assets/img/Siix.jpg" alt="Logo" width="180" height="60" class="mr-2">
+                <img src="<?= base_url('assets/img/Siix.jpg');?>" alt="Logo" width="180" height="60" class="mr-2">
                 
             </a>
 
@@ -14,7 +14,7 @@
 
             <!-- Nav Item - Dashboard -->
             <li class="nav-item active">
-                <a class="nav-link" href="#">
+                <a class="nav-link" href="<?= base_url('index.php/auth/dashboard'); ?>">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
                     <span>Dashboard</span></a>
             </li>
@@ -35,12 +35,12 @@
                 <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">SCHEDULE</h6>
-                        <a class="collapse-item" href="#">Machine</a>
-                        <a class="collapse-item" href="#">Pallet Selective</a>
-                        <a class="collapse-item" href="#">Jig</a>
-                        <a class="collapse-item" href="#">Fume Extractor</a>
-                        <a class="collapse-item" href="#">Selective Line</a>
-                        <a class="collapse-item" href="#">Trolley & Handjack</a>
+                        <a class="collapse-item" href="<?= base_url('schedule/s_machine'); ?>">Machine</a>
+                        <a class="collapse-item" href="<?= base_url('schedule/s_pallet'); ?>">Pallet Selective</a>
+                        <a class="collapse-item" href="<?= base_url('schedule/s_jig'); ?>">Jig</a>
+                        <a class="collapse-item" href="<?= base_url('schedule/s_fume'); ?>">Fume Extractor</a>
+                        <a class="collapse-item" href="<?= base_url('schedule/s_selective'); ?>">Selective Line</a>
+                        <a class="collapse-item" href="<?= base_url('schedule/s_trolley'); ?>">Trolley & Handjack</a>
                         
                     </div>
                 </div>
