@@ -23,5 +23,22 @@ public function s_pallet()
     $this->load->view('template', ['content' => 'schedule/s_pallet']);
 }
 
+public function s_selective()
+{
+    $this->load->view('template', ['content' => 'schedule/s_selective']);
+}
+public function s_trolley()
+{
+    $this->load->view('template', ['content' => 'schedule/s_trolley']); 
+}
 
+public function s_fume()
+{
+    $this->load->view('template', ['content' => 'schedule/s_fume']);
+}   
+
+public function s_jig()
+{
+    $this->load->view('template', ['content' => 'schedule/s_jig']);
+}
 }
