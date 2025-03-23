@@ -59,11 +59,11 @@
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">DATA</h6>
                         <a class="collapse-item" href="<?= base_url('data/d_machine'); ?>">Machine</a>
-                        <a class="collapse-item" href="#">Pallet Selective</a>
-                        <a class="collapse-item" href="#">Jig</a>
-                        <a class="collapse-item" href="#">Fume Extractor</a>
-                        <a class="collapse-item" href="#">Selective Line</a>
-                        <a class="collapse-item" href="#">Trolley & Handjack</a>
+                        <a class="collapse-item" href="<?= base_url('data/d_pallet'); ?>">Pallet Selective</a>
+                        <a class="collapse-item" href="<?= base_url('data/d_jig'); ?>">Jig</a>
+                        <a class="collapse-item" href="<?= base_url('data/d_fume'); ?>">Fume Extractor</a>
+                        <a class="collapse-item" href="<?= base_url('data/d_selective'); ?>">Selective Line</a>
+                        <a class="collapse-item" href="<?= base_url('data/d_trolley'); ?>">Trolley & Handjack</a>
                         
                     </div>
                 </div>
@@ -80,12 +80,9 @@
                 <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">REPORT</h6>
-                        <a class="collapse-item" href="#">Machine</a>
-                        <a class="collapse-item" href="#">Pallet Selective</a>
-                        <a class="collapse-item" href="#">Jig</a>
-                        <a class="collapse-item" href="#">Fume Extractor</a>
-                        <a class="collapse-item" href="#">Selective Line</a>
-                        <a class="collapse-item" href="#">Trolley & Handjack</a>
+                        <a class="collapse-item" href="#">Week</a>
+                        <a class="collapse-item" href="#">Month</a>
+                        <a class="collapse-item" href="#">Year</a>
                         
                     </div>
                 </div>

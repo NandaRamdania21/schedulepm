@@ -14,31 +14,32 @@ class Data extends CI_Controller {
     }
 
     public function d_machine()
-{
-    $this->load->view('template', ['content' => 'data/d_machine']);
-}
+    {
+        $this->load->view('template', ['content' => 'data/d_machine']);
+    }
 
-public function d_pallet()
-{
-    $this->load->view('template', ['content' => 'data/d_pallet']);
-}
+    public function d_pallet()
+    {
+        $this->load->view('template', ['content' => 'data/d_pallet']);
+    }
 
-public function d_selective()
-{
-    $this->load->view('template', ['content' => 'data/d_selective']);
-}
-public function d_trolley()
-{
-    $this->load->view('template', ['content' => 'data/d_trolley']); 
-}
+    public function d_selective()
+    {
+        $this->load->view('template', ['content' => 'data/d_selective']);
+    }
 
-public function d_fume()
-{
-    $this->load->view('template', ['content' => 'data/d_fume']);
-}   
+    public function d_trolley()
+    {
+        $this->load->view('template', ['content' => 'data/d_trolley']); 
+    }
 
-public function d_jig()
-{
-    $this->load->view('template', ['content' => 'data/d_jig']);
-}
+    public function d_fume()
+    {
+        $this->load->view('template', ['content' => 'data/d_fume']);
+    }   
+
+    public function d_jig()
+    {
+        $this->load->view('template', ['content' => 'data/d_jig']);
+    }
 }
