@@ -48,7 +48,8 @@
                                                 <th class="sorting" tabindex="0" aria-controls="dataTable" rowspan="1" colspan="1" aria-label="Cust: activate to sort column ascending" style="width: 150px;">Cust</th>
                                                 <th class="sorting" tabindex="0" aria-controls="dataTable" rowspan="1" colspan="1" aria-label="Remark: activate to sort column ascending" style="width: 200px;">Remark</th>
                                             </tr>
-                                        </thead>
+
+                                    
                                         <tbody>
                                             <!-- Example Data (replace with dynamic data from the database) -->
                                                 <tr>
@@ -66,6 +67,37 @@
                                                 <td>SELECTIVE 1</td>
                                                 <td>SSM-AVI-001-0</td>
                                                 <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td rowspan="2" class="merged-cell">2</td>
+                                                <td rowspan="2" class="merged-cell">44</td>
+                                                <td class="equipment-cell">
+                                                <div class="fluxer">FLUXER</div>
+                                                </td>
+                                                <td>FM-AVI-001-0</td>
+                                                <td rowspan="2" class="merged-cell">COMMON</td>
+                                                <td rowspan="2" class="merged-cell">AV</td>
+                                                <td></td>
+                                                </tr>
+                                                <tr>
+                                                <td>SELECTIVE 1</td>
+                                                <td>SSM-AVI-001-0</td>
+                                                <td>UNDER MAINTENANCE</td>
+                                            </tr><tr>
+                                                <td rowspan="2" class="merged-cell">1</td>
+                                                <td rowspan="2" class="merged-cell">32</td>
+                                                <td class="equipment-cell">
+                                                <div class="fluxer">FLUXER</div>
+                                                </td>
+                                                <td>FM-AVI-001-0</td>
+                                                <td rowspan="2" class="merged-cell">COMMON</td>
+                                                <td rowspan="2" class="merged-cell">AV</td>
+                                                <td></td>
+                                                </tr>
+                                                <tr>
+                                                <td>SELECTIVE 1</td>
+                                                <td>SSM-AVI-001-0</td>
+                                                <td>LINE OK</td>
                                             </tr>
                                             <!-- More rows can go here -->
                                         </tbody>
