@@ -1,3 +1,8 @@
+<?php
+if(!isset($_SESSION['email'])){
+redirect('Auth');
+}else{ ?><?php }
+?>
 <!DOCTYPE html>
 <html lang="en">
 

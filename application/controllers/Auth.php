@@ -13,6 +13,7 @@ class Auth extends CI_Controller
 
     public function index()
 {
+    
     $this->form_validation->set_rules('email','Email','required|trim|valid_email');
     $this->form_validation->set_rules('password','Password','required|trim');
 
@@ -58,7 +59,21 @@ class Auth extends CI_Controller
 }
     public function dashboard()
     {
-        
-        $this->load->view('template', ['content' => 'dashboard']); 
-    }
+        $this->load->model('M_schedule');
+
+        $data['count_advance']   = $this->M_schedule->count_by_status('advance');
+        $data['count_ontime']    = $this->M_schedule->count_by_status('on time');
+        $data['count_delay']     = $this->M_schedule->count_by_status('delay');
+        $data['count_scheduled'] = $this->M_schedule->count_by_status('scheduled'); // optional
+    
+        // kirim semua data ke dashboard view
+        $this->load->view('template', [
+            'content' => 'dashboard',
+            'count_advance' => $data['count_advance'],
+            'count_ontime' => $data['count_ontime'],
+            'count_delay' => $data['count_delay'],
+            'count_scheduled' => $data['count_scheduled'],
+        ]);
+    }    
+    
 }

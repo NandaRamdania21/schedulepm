@@ -15,7 +15,9 @@ class Data extends CI_Controller {
 
     public function d_machine()
     {
-        $this->load->view('template', ['content' => 'data/d_machine']);
+        $this->load->model('M_schedule');
+    $data['machines'] = $this->M_schedule->get_machine_data_only();
+    $this->load->view('template', ['content' => 'data/d_machine', 'machines' => $data['machines']]);
     }
 
     public function d_pallet()
